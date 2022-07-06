@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:netflixapp/core/colors/colors.dart';
 import 'package:netflixapp/presentation/main%20page/widgets/screen_mainpage.dart';
 
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: backgroundColor,
         primarySwatch: Colors.blue,
         backgroundColor: Colors.black,
+        fontFamily: GoogleFonts.montserrat().fontFamily,
         textTheme:const TextTheme(
           bodyText1: TextStyle(
             color: Colors.white
