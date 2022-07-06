@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:netflixapp/core/colors/colors.dart';
 import 'package:netflixapp/presentation/main%20page/widgets/screen_mainpage.dart';
 
 void main() {
@@ -11,11 +12,22 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
+        scaffoldBackgroundColor: backgroundColor,
         primarySwatch: Colors.blue,
+        backgroundColor: Colors.black,
+        textTheme:const TextTheme(
+          bodyText1: TextStyle(
+            color: Colors.white
+          ),
+           bodyText2: TextStyle(
+            color: Colors.white
+          )
+        )
       ),
-      home: const ScreenMainPage(),
+      home:  ScreenMainPage(),
     );
   }
 }
