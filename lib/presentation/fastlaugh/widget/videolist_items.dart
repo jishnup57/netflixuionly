@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:netflixapp/core/colors/colors.dart';
 
 class VideoListItems extends StatelessWidget {
-  int index;
-  VideoListItems({Key? key, required this.index}) : super(key: key);
+ final int index;
+const  VideoListItems({Key? key, required this.index}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -32,9 +32,9 @@ class VideoListItems extends StatelessWidget {
                 ),
                 Column(
                   mainAxisAlignment: MainAxisAlignment.end,
-                  children:  [
+                  children: const [
                     Padding(
-                      padding: const EdgeInsets.symmetric(vertical:10.0),
+                      padding:  EdgeInsets.symmetric(vertical:10.0),
                       child: CircleAvatar(
                         radius: 30,
                         backgroundImage: NetworkImage( 'https://www.themoviedb.org/t/p/w220_and_h330_face/rJHC1RUORuUhtfNb4Npclx0xnOf.jpg'),
@@ -75,7 +75,7 @@ class VideoActionWidget extends StatelessWidget {
             color: colorWhite,
             size: 30,
           ),
-          Text(title,style: TextStyle(
+          Text(title,style:const TextStyle(
             fontSize: 16
           ),)
         ],

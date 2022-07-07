@@ -30,6 +30,7 @@ class ScreenDownloads extends StatelessWidget {
   }
 }
 
+// ignore: must_be_immutable
 class Section2 extends StatelessWidget {
   Section2({Key? key}) : super(key: key);
   List imageurl = [
