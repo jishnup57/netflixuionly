@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: backgroundColor,
         primarySwatch: Colors.blue,
         backgroundColor: Colors.black,
-        fontFamily: GoogleFonts.montserrat().fontFamily,
+        fontFamily: GoogleFonts.dmSans().fontFamily,
         textTheme:const TextTheme(
           bodyText1: TextStyle(
             color: Colors.white
