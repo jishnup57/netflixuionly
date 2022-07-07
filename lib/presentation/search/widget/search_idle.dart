@@ -45,7 +45,7 @@ class TopSearchItemsTile extends StatelessWidget {
         Container(
           width: screenwidth * 0.35,
           height: 65,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             image: DecorationImage(
               fit: BoxFit.cover,
               image: NetworkImage(imageurl),

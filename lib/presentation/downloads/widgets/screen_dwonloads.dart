@@ -8,13 +8,13 @@ import 'package:netflixapp/presentation/widgets/app_bar_widget.dart';
 class ScreenDownloads extends StatelessWidget {
   ScreenDownloads({Key? key}) : super(key: key);
   final _widgetList = [
-    const _smartDownloads(),
+    const _SmartDownloads(),
     Section2(),
     const Section3(),
   ];
   @override
   Widget build(BuildContext context) {
-    final Size size = MediaQuery.of(context).size;
+   // final Size size = MediaQuery.of(context).size;
     return Scaffold(
         appBar: const PreferredSize(
             preferredSize: Size.fromHeight(50),
@@ -66,21 +66,21 @@ class Section2 extends StatelessWidget {
             ),
             DownloadsImageWidget(
               imageurl: imageurl[0],
-              margin: EdgeInsets.only(left: 170,top:50 ),
+              margin:const EdgeInsets.only(left: 170,top:50 ),
               angle: 25,
               width: size.width * 0.35,
               height: size.width * 0.55,
             ),
             DownloadsImageWidget(
               imageurl: imageurl[1],
-              margin: EdgeInsets.only(right: 170,top: 50),
+              margin:const EdgeInsets.only(right: 170,top: 50),
               angle: -25,
               width: size.width * 0.35,
               height: size.width * 0.55,
             ),
             DownloadsImageWidget(
               imageurl: imageurl[2],
-              margin: EdgeInsets.only(bottom: 25,top: 50),
+              margin:const EdgeInsets.only(bottom: 25,top: 50),
               width: size.width * 0.4,
               height: size.width * 0.65,
               radius: 8,
@@ -139,8 +139,8 @@ class Section3 extends StatelessWidget {
   }
 }
 
-class _smartDownloads extends StatelessWidget {
-  const _smartDownloads({
+class _SmartDownloads extends StatelessWidget {
+  const _SmartDownloads({
     Key? key,
   }) : super(key: key);
 
