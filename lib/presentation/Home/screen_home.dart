@@ -63,10 +63,10 @@ class ScreenHome extends StatelessWidget {
                         children: [
                           Row(
                             children: [
-                              Image.network(
-                                'https://cdn-images-1.medium.com/max/1200/1*ty4NvNrGg4ReETxqU2N3Og.png',
-                                width: 60,
-                                height: 60,
+                              Image.asset(
+                                'asset/image/netflix_logo.png',
+                                width: 50,
+                                height: 50,
                               ),
                               const Spacer(),
                               const Icon(
