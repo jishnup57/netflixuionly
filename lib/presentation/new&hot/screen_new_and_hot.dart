@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:netflixapp/core/colors/colors.dart';
 import 'package:netflixapp/core/constants.dart';
+import 'package:netflixapp/presentation/Home/widget/custom_button_widget.dart';
 import 'package:netflixapp/presentation/new&hot/widgets/coming_soon_widget.dart';
+import 'package:netflixapp/presentation/new&hot/widgets/everyones_watching_widget.dart';
+import 'package:netflixapp/presentation/widgets/video_widget.dart';
 
 class ScreenNewandHot extends StatelessWidget {
   const ScreenNewandHot({Key? key}) : super(key: key);
@@ -34,6 +37,7 @@ class ScreenNewandHot extends StatelessWidget {
               ),
             ],
             bottom: TabBar(
+              isScrollable: true,
               tabs: const [
                 Tab(
                   text: "🍿Comming Soon",
@@ -71,6 +75,10 @@ class ScreenNewandHot extends StatelessWidget {
   }
 
   _buildEveryOneWatching() {
-    return const SizedBox();
+    return ListView.builder(itemBuilder: (BuildContext ctx, index){
+      return const EveryonesWatchingWidget();
+    },
+    itemCount: 10,);
   }
 }
+

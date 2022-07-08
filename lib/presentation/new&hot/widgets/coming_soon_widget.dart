@@ -1,20 +1,17 @@
-
 import 'package:flutter/material.dart';
 import 'package:netflixapp/core/colors/colors.dart';
 import 'package:netflixapp/core/constants.dart';
 import 'package:netflixapp/presentation/Home/widget/custom_button_widget.dart';
+import 'package:netflixapp/presentation/widgets/video_widget.dart';
 
 class ComingSoon extends StatelessWidget {
   const ComingSoon({
     Key? key,
-  
   }) : super(key: key);
-
-
 
   @override
   Widget build(BuildContext context) {
-     Size size = MediaQuery.of(context).size;
+    Size size = MediaQuery.of(context).size;
     return Row(
       children: [
         SizedBox(
@@ -23,8 +20,7 @@ class ComingSoon extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: const [
-              Text("FEB",
-                  style: TextStyle(fontSize: 16, color: kGreyColor)),
+              Text("FEB", style: TextStyle(fontSize: 16, color: kGreyColor)),
               Text(
                 "11",
                 style: TextStyle(
@@ -41,41 +37,13 @@ class ComingSoon extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Stack(
-                children: [
-                  SizedBox(
-                    width: double.infinity,
-                    height: 200,
-                    child: Image.asset(
-                      "asset/image/newandhotTempImage.jpg",
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                  Positioned(
-                    bottom: 10,
-                    right: 10,
-                    child: CircleAvatar(
-                      backgroundColor: Colors.black.withOpacity(0.5),
-                      radius: 22,
-                      child: IconButton(
-                        onPressed: () {},
-                        icon: const Icon(
-                          Icons.volume_off,
-                          color: colorWhite,
-                          size: 20,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
+            const  VideoWidget(),
               Row(
                 //  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: const [
                   Text(
                     "MS.Marvel",
-                    style: TextStyle(
-                        fontSize: 35, fontWeight: FontWeight.bold),
+                    style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
                   ),
                   Spacer(),
                   CustomButtonWidget(
@@ -106,12 +74,13 @@ class ComingSoon extends StatelessWidget {
               ),
               kHeight,
               const Text(
-                  "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
-                  style: TextStyle(
-                    fontSize: 16,
-                    color: kGreyColor,
-                    wordSpacing: 1,
-                  ))
+                "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
+                style: TextStyle(
+                  fontSize: 16,
+                  color: kGreyColor,
+                  wordSpacing: 1,
+                ),
+              )
             ],
           ),
         )
@@ -119,3 +88,4 @@ class ComingSoon extends StatelessWidget {
     );
   }
 }
+
