@@ -22,7 +22,7 @@ class MainTitleCard extends StatelessWidget {
     child: ListView(
       scrollDirection: Axis.horizontal,
       children: 
-        List.generate(10, (index) => MainCardHome())
+        List.generate(10, (index) =>const MainCardHome())
       ,
     ),
       )
